@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../static/start.css">
+
+    <title>SMART CHROME DINO</title>
+    
+    <script src="../static/start.js"></script> 
+</head>
+<body>
+    <h1>SMART CHROME DINO</h1>
+    
+    <ul class="menu-options">
+        <li>
+            <input type="radio" id="play" name="menu" value="play" onchange="enableStartButton()">
+            <label for="play">Play the game</label>
+            <ul>
+                <li>
+                    <input type="radio" id="obstacles1" name="obstacles" value="2" onchange="setObstacleCount(2)" disabled>
+                    <label for="obstacles1">2 Obstacles</label>
+                </li>
+                <li>
+                    <input type="radio" id="obstacles2" name="obstacles" value="3" onchange="setObstacleCount(3)" disabled>
+                    <label for="obstacles2">3 Obstacles</label>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <input type="radio" id="speed1" name="speed" value="1" onchange="setSpeed(1)" disabled>
+                    <label for="speed1">Slow</label>
+                </li>
+                <li>
+                    <input type="radio" id="speed2" name="speed" value="2" onchange="setSpeed(2)" disabled>
+                    <label for="speed2">Fast</label>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    
+    <ul>
+        <li>
+            <input type="radio" id="auto" name="menu" value="auto" onclick="handleAutoSelection()" onchange="enableStartButton()">
+            <label for="auto" >Auto</label>
+        </li>
+    </ul>
+    
+    <button class="start-button" onclick="redirectToOtherPage()" disabled id="startButton">Start</button>
+
+    <!-- <button> <a href="/my-link/">Click me</a></button> -->
+    
+    <!-- Your page content goes here -->
+</body>
+</html>

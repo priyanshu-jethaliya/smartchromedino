@@ -1,0 +1,3 @@
+runtime: python311
+
+entrypoint: gunicorn -b :5000 server:app
