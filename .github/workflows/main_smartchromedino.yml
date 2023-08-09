@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'smartchromedino'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A4368D2F49C245EC98F2DE1F889036D6 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8047D872FF1148BD8C0B5D5A6FD1D0DB }}
